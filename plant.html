@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Herbs and Plants</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #006400; /* Dark green */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h2 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #004d00; /* Slightly darker green */
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #00ff00; /* Bright green on hover */
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        /* Card Style */
+        .card {
+            background-color: #b0b0b0; /* More pronounced ash gray */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-description {
+            padding: 20px;
+        }
+
+        .card-description h3 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-description p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive Card Styling */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+/* Footer TEXT COLOR */
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            footer {
+                font-size: 12px;
+                padding: 20px 5px;
+            }
+        }
+        .benefits-list {
+        list-style-type: none;
+        padding: 0;
+       }
+
+       .benefits-list li {
+        background-color: green;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        }
+      .benefits-list strong {
+       color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2>Herbs and Plants</h2>
+    </header>
+
+    <!-- Navigation -->
+    <ul class="navbar">
+        <li><a href="index.html" class="nav-link">Homepage</a></li>
+        <li><a href="Mobile.html" class="nav-link">Herbs</a></li>
+        <li><a href="plant.html" class="nav-link">Plants</a></li>
+
+    </ul>
+    <br>
+    <center>
+        <h1 style="color: green;">Five Kinds of Plants</h1>
+    </center>
+
+    <!-- Main Content -->
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="img/pencil-cactus-the-fresh-flower-company.jpg" alt="Pencil Cactus">
+            <div class="card-description">
+                <h3>Pencil Cactus</h3>
+                <p>The Pencil Cactus is a unique and intriguing plant that belongs to the Euphorbia family. It is characterized by its long, slender, pencil-like green stems, which give it its common name. Despite its cactus-like appearance, it's not a true cactus but a succulent. The plant can grow quite large in outdoor environments, reaching heights of up to 30 feet, but it can also be grown indoors where it remains much smaller.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Natural Pest Control</strong></li>
+                    <li><strong>Air Purification</strong></li>
+                    <li><strong>Drought Resistance</strong></li>
+                    <li><strong>Soil Erosion Prevention</strong></li>
+                    <li><strong>Aesthetic Appeal</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="img/istockphoto-1174307239-612x612.jpg" alt="Candelabra">
+            <div class="card-description">
+                <h3>Candelabra</h3>
+                <p>The Candelabra Plant, also known as Euphorbia lactea, is a striking succulent that belongs to the Euphorbia family. This plant is known for its unique, sculptural appearance and can add an exotic touch to indoor or outdoor gardens.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Attractive Ornamental Plant</strong></li>
+                    <li><strong>Acts as a Natural Air Purifier</strong></li>
+                    <li><strong>Requires Minimal Watering</strong></li>
+                    <li><strong>Provides Shelter for Wildlife</strong></li>
+                    <li><strong>Enhances Landscape Design</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="img/istockphoto-1320236592-1024x1024.jpg" alt="Jade Plant">
+            <div class="card-description">
+                <h3>Jade Plant</h3>
+                <p>The Jade Plant, also known as Money Tree or Friendship Tree, is a popular succulent native to South Africa. It's valued for its attractive, fleshy leaves and ease of care, making it a favorite among indoor gardeners.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Easy to Care For</strong></li>
+                    <li><strong>Improves Indoor Air Quality</strong></li>
+                    <li><strong>Brings Good Luck and Prosperity</strong></li>
+                    <li><strong>Enhances Aesthetic Appeal</strong></li>
+                    <li><strong>Promotes Positive Energy</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="img/istockphoto-1306061565-1024x1024.jpg" alt="Letizia">
+            <div class="card-description">
+                <h3>Letizia</h3>
+                <p>The Letizia Plant, or Crown of Thorns, is a succulent flowering plant belonging to the Euphorbia family. It is native to Madagascar but has become popular in many regions due to its unique appearance and ease of care.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Attracts Pollinators</strong></li>
+                    <li><strong>Enhances Humidity Levels</strong></li>
+                    <li><strong>Natural Insect Trap</strong></li>
+                    <li><strong>Unique Aesthetic Appeal</strong></li>
+                    <li><strong>Supports Ecosystem Diversity</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="img/istockphoto-1393844704-1024x1024.jpg" alt="Curio Rowleynus">
+            <div class="card-description">
+                <h3>Curio Rowleynus</h3>
+                <p>Curio rowleyanus, commonly known as String of Pearls, is a popular succulent native to South Africa. It is admired for its unique, trailing appearance and small, round leaves that resemble pearls strung along a vine.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Unique Aesthetic Appeal</strong></li>
+                    <li><strong>Low Maintenance Care</strong></li>
+                    <li><strong>Improves Indoor Air Quality</strong></li>
+                    <li><strong>Effective in Drought Conditions</strong></li>
+                    <li><strong>Can Be Used in Hanging Baskets</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Herbs and Plants. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>

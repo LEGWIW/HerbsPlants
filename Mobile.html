@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Herbs and Plants</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #006400; /* Dark green */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h2 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #004d00; /* Slightly darker green */
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #00ff00; /* Bright green on hover */
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        /* Card Style */
+        .card {
+            background-color: #b0b0b0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-description {
+            padding: 20px;
+        }
+
+        .card-description h3 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-description p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive Card Styling */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: green;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            footer {
+                font-size: 12px;
+                padding: 20px 5px;
+            }
+        }
+        .benefits-list {
+        list-style-type: none;
+        padding: 0;
+       }
+
+       .benefits-list li {
+        background-color: green;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        }
+      .benefits-list strong {
+       color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2>Herbs and Plants</h2>
+    </header>
+    
+
+    <!-- Navigation -->
+    <ul class="navbar">
+        <li><a href="index.html" class="nav-link">Homepage</a></li>
+        <li><a href="Mobile.html" class="nav-link">Herbs</a></li>
+        <li><a href="plant.html" class="nav-link">Plants</a></li>
+        
+ 
+    </ul>
+    <br>
+
+    <center>
+        <h1 style="color: green;">Five Kinds of Herbs</h1>
+    </center>
+
+    <!-- Main Content -->
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="img/Attachment-1.jpeg" alt="Herb Image">
+            <div class="card-description">
+                <h3>Agrimony</h3>
+                <p>Agrimony is an herb valued for its astringent, anti-inflammatory, and diuretic properties. It has been traditionally used in herbal medicine to support digestive health and relieve conditions such as indigestion and diarrhea.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Supports Digestive Health</strong></li>
+                    <li><strong>Astringent Properties</strong></li>
+                    <li><strong>Anti-inflammatory</strong></li>
+                    <li><strong>Liver Health Support</strong></li>
+                    <li><strong>Diuretic Effect</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="img/istockphoto-914683814-1024x1024.jpg" alt="Herb Image">
+            <div class="card-description">
+                <h3>Alovera</h3>
+                <p>Agrimonia eupatoria is a perennial herb used for its astringent qualities, beneficial in managing digestive issues, such as diarrhea and indigestion. It also soothes skin irritations when applied topically.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Moisturizes Skin</strong></li>
+                    <li><strong>Soothes Sunburn</strong></li>
+                    <li><strong>Promotes Wound Healing</strong></li>
+                    <li><strong>Reduces Inflammation</strong></li>
+                    <li><strong>Aids Digestion</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="img/chiaplant1.jpg" alt="Herb Image">
+            <div class="card-description">
+                <h3>Chia Plant</h3>
+                <p>Chia Plant are a rich source of omega-3 fatty acids, fiber, protein, and essential minerals. They are known for their ability to expand in water, aiding digestion and promoting fullness.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Rich in Omega-3 Fatty Acids</strong></li>
+                    <li><strong>High in Fiber</strong></li>
+                    <li><strong>Supports Heart Health</strong></li>
+                    <li><strong>Helps Control Appetite</strong></li>
+                    <li><strong>Boosts Energy Levels</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="img/AMP_9588-708X466.jpg" alt="Herb Image">
+            <div class="card-description">
+                <h3>Mint</h3>
+                <p>Mint is widely known for its cooling effect and soothing properties. It can be used in teas, culinary dishes, and to alleviate digestive issues such as indigestion or nausea.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Freshens Breath</strong></li>
+                    <li><strong>Aids Digestion</strong></li>
+                    <li><strong>Relieves Headaches</strong></li>
+                    <li><strong>Has Antioxidant Properties</strong></li>
+                    <li><strong>Reduces Stress and Fatigue</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="img/AMP_9588-708X466.jpg" alt="Herb Image">
+            <div class="card-description">
+                <h3>Basil</h3>
+                <p>Basil is a fragrant herb often used in cooking to add flavor. It also has antioxidant and anti-inflammatory properties that are beneficial for maintaining health.</p>
+                <h3>Benifits</h3>
+                <ul class="benefits-list">
+                    <li><strong>Rich in Antioxidants</strong></li>
+                    <li><strong>Supports Immune Function</strong></li>
+                    <li><strong>Anti-inflammatory Properties</strong></li>
+                    <li><strong>Aids Digestion</strong></li>
+                    <li><strong>Promotes Healthy Skin</strong></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Herbs and Plants. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>

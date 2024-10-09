@@ -1,0 +1,201 @@
+body {
+    font-family: 'Georgia', serif; /* Elegant font */
+    background-color: #e0e4e3; /* Light ash gray */
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d00; /* Dark green */
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2em; /* Larger font size for elegance */
+    color: #f0f6f5; /* Light ash gray text */
+    letter-spacing: 1px; /* Spacing for elegance */
+}
+
+.nav-links a {
+    margin: 0 15px; /* More spacing between links */
+    text-decoration: none;
+    color: #f0f6f5; /* Light ash gray text */
+    font-weight: 600; /* Slightly bolder */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-links a:hover {
+    color: #00ff00; /* Bright green on hover */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.text-content {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.text-content h1 {
+    font-size: 3em; /* Large font size */
+    margin-bottom: 10px;
+    color: #004d00; /* Dark green */
+    font-weight: 700; /* Bold for emphasis */
+    line-height: 1.2; /* Tight line height for elegance */
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    color: #333; /* Dark ash gray */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.discover-btn {
+    background-color: #00ff00; /* Bright green background */
+    color: #004d00; /* Dark green text */
+    padding: 10px 20px;
+    border: 2px solid #004d00;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+    font-weight: 600; /* Bold text for buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.discover-btn:hover {
+    background-color: #004d00; /* Dark green on hover */
+    color: #00ff00; /* Bright green text on hover */
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    color: #333; /* Dark ash gray */
+}
+
+.feature-item h3 {
+    color: #004d00; /* Dark green */
+    font-weight: 600; /* Slightly bolder */
+    font-size: 1.3em; /* Slightly larger font size */
+    margin: 10px 0; /* Spacing around heading */
+}
+
+.feature-item p {
+    color: #333; /* Dark ash gray */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+footer {
+    background: #333; /* Dark ash gray */
+    color: #f0f6f5; /* Light ash gray */
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        margin-bottom: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+    footer p {
+        margin: 10px 0;
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d00;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+.image-circle {
+    width: 10vw;
+    height: 10vw;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%; 
+    overflow: hidden;
+    position: absolute; 
+    top: 15px; 
+    right: 5%;
+    border: 2px solid #00ff00; 
+}
+
+.image-circle img {
+    width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 600px) {
+    .image-circle {
+        width: 30px;
+        height: 30px;
+    }
+}
